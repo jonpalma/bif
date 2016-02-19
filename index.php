@@ -28,16 +28,12 @@
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 	<div class="nosotros spacing" id="nosotros">
 		<div class="row no-margin">
-			<div class="col-md-3 col-sm-2 hidden-xs left">
-				<img class="left" src="img/nosotros/left.png">
-			</div>
-			<div class="col-md-6 col-sm-8 text-center">
+			<img class="left" src="img/nosotros/left.png">
+			<div class="container text-center">
 				<h1 class="header">¿Qué es Bif?</h1>
 				<p class="text">Bif es una cadena de tiendas con un nuevo concepto denominado Boutique de carnes, la cual está diseñada para satisfacer los gustos más exigentes y exclusivos en el arte del buen comer. Nuevas tiendas Bif, para expertos en carnes y el buen comer.</p>
 			</div>
-			<div class="col-md-3 col-sm-2 hidden-xs right">
-				<img class="right" src="img/nosotros/right.png">
-			</div>
+			<img class="right" src="img/nosotros/right.png">
 		</div>
 	</div>
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->

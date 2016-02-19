@@ -148,25 +148,33 @@ body {
 /*** NOSOTROS ***/
 .nosotros {
 	overflow: hidden;
-	text-shadow: 1px 1px rgba(255,255,255,.6);
+	text-shadow: .6px .6px rgba(255,255,255,1), 
+		-.6px -.6px rgba(255,255,255,1),
+		.6px -.6px rgba(255,255,255,1),
+		-.6px .6px rgba(255,255,255,1);
+	position: relative;
 }
 
-.nosotros .left img,
-.nosotros .right img  {
+.nosotros .left,
+.nosotros .right  {
 	position: absolute;
 	z-index: -1;
-	max-width: 44vw;
+	max-width: 50vw;
 }
 
-.nosotros .left img {
-	margin-left: -30px;
-	top: -300px
+.nosotros .left {
+	/*margin-left: -30px;
+	top: -300px;*/
+	left: 0;
+	top: -100px;
 }
 
-.nosotros .right img {
-	right: 0;
+.nosotros .right {
+	/*right: 0;
 	margin-right: -15px;
-	bottom: -380px;
+	bottom: -380px;*/
+	right: 0;
+	bottom: 0;
 }
 /*** NOSOTROS ***/
 
@@ -489,5 +497,11 @@ footer {
 	.banner-top .contact-info span:after {
 		content: '\a';
 		white-space: pre;
+	}
+	.nosotros .left {
+		top: 0;
+	}
+	.nosotros .right {
+		bottom: 0;
 	}
 }
