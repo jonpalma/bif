@@ -97,6 +97,11 @@ body {
 	opacity: .9;
 }
 
+.navbar-fixed-top .navbar-collapse {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 .navbar-nav>li {
 	height: 116px;
 }
