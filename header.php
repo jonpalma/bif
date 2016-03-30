@@ -22,11 +22,14 @@
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav pull-right">
-						<li><a class="vertical-align smoothScroll" href="#inicio">Inicio <span class="sr-only">(current)</span></a></li>
-						<li><a class="vertical-align smoothScroll" href="#nosotros">Nosotros</a></li>
-						<li><a class="vertical-align smoothScroll" href="#productos">Productos</a></li>
-						<li><a class="vertical-align smoothScroll" href="#tiendas">Tiendas</a></li>
-						<li><a class="vertical-align smoothScroll" href="#contacto">Contacto</a></li>
+						<li><a class="vertical-align smoothScroll" href="<?php if(isset($current_page)){ if($current_page != 'index'){ echo 'index.php'; }} ?>#inicio">Inicio <span class="sr-only">(current)</span></a></li>
+						<li><a class="vertical-align smoothScroll" href="<?php if(isset($current_page)){ if($current_page != 'index'){ echo 'index.php'; }} ?>#nosotros">Nosotros</a></li>
+						<li><a class="vertical-align smoothScroll" href="<?php if(isset($current_page)){ if($current_page != 'index'){ echo 'index.php'; }} ?>#recetas">Recetas</a></li>
+						<li><a class="vertical-align smoothScroll" href="<?php if(isset($current_page)){ if($current_page != 'index'){ echo 'index.php'; }} ?>#guia">Guía Experto</a></li>
+						<li><a class="vertical-align smoothScroll" href="<?php if(isset($current_page)){ if($current_page != 'index'){ echo 'index.php'; }} ?>#productos">Productos</a></li>
+						<li><a class="vertical-align smoothScroll" href="<?php if(isset($current_page)){ if($current_page != 'index'){ echo 'index.php'; }} ?>#ubicaciones">Ubicaciones</a></li>
+						<li><a class="vertical-align smoothScroll" href="<?php if(isset($current_page)){ if($current_page != 'index'){ echo 'index.php'; }} ?>#contacto">Contacto</a></li>
+						<li><a class="vertical-align facebook" href="https://www.facebook.com/Lacarnesecompraenbif" target="_blank"><img src="img/icons/fb.png" alt="facebook"></a></li>
 					</ul>
 				</div>
 			</div>

@@ -245,7 +245,6 @@ if (!window['jQuery']) alert('The jQuery library must be included before the smo
 		$('body').localScroll(settings);
 	},
 		$offset = parseInt($('.navbar').css('height').substring(0 , $('.navbar').css('height').indexOf('p')));
-	 	console.log($offset)
 	// Many of these defaults, belong to jQuery.ScrollTo, check it's demo for an example of each option.
 	// @see http://demos.flesler.com/jquery/scrollTo/
 	// The defaults are public and can be overriden.
