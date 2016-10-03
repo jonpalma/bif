@@ -18,6 +18,7 @@
         <div class="vertical-align">
             <!--<img class="center-block" src="<?php echo bloginfo('template_url'); ?>/img/banner/caption-2.png" alt="La carne se compra en Bif">-->
         </div>
+        <img class="main-banner" src="<?php echo CFS()->get('index_banner'); ?>" alt="Banner Principal">
         <img class="banner-footer" src="<?php echo bloginfo('template_url'); ?>/img/banner/banner_bif.jpg" alt="La carne se compra en bif">
     </div>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -31,8 +32,10 @@
             <div class="container">
                 <div class="col-sm-5"></div>
                 <div class="col-sm-7">
-                    <h1 class="header">¿Qué es Bif?</h1>
-                    <p class="text text-justify">Carnes Bif se renueva para ofrecerte todo en un solo lugar, desde cerveza, refrescos hasta los quesos y las carnes frías, hamburguesas, papas a la francesa, verduras, carne seca, tortillas, salsas, carbón y por supuesto los mejores cortes de carne de res, pollo y cerdo para tu comida diaria o para tus carnes asadas del fin de semana, recuerda que la carne se compra en Bif.</p>
+                    <h1 class="header"><?php echo CFS()->get('nosotros_title');?></h1>
+                    <p class="text text-justify">
+                        <?php echo CFS()->get('nosotros_text');?>
+                    </p>
                     <div class="red-divider"></div>
                     <a href="#video-modal" class="section-header" data-toggle="modal" data-target="#video-modal">Ver&nbsp;&nbsp;&nbsp;&nbsp;Video</a>
                 </div>
@@ -45,7 +48,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PZ4pctQMdg4?start=16" frameborder="0" allowfullscreen></iframe>
+                    <?php echo CFS()->get('video');?>
                 </div>
             </div>
         </div>
@@ -56,7 +59,7 @@
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="concepto" id="concepto">
-        <h1 class="header text-center light-spacing">Concepto One Stop</h1>
+        <h1 class="header text-center light-spacing"><?php echo CFS()->get('one_stop_title');?></h1>
         <div class="banner-divider">
             <div class="container vertical-align">
                 <div class="row no-margin">
@@ -65,7 +68,7 @@
                     <div class="col-sm-7">
                         <img src="<?php echo bloginfo('template_url'); ?>/img/dividers/sabias-que.png" alt="¿Sabías qué?" class="img-responsive">
                         <h3 class="text-justify">
-                            En Bif tienes todo en un solo lugar. Milanesas, molida, pechugas, deshebrada, hamburguesas y carne para tacos. Además de verduras, quesos y  carnes frías. Con un servicio rápido, práctico y con atención personalizada.
+                            <?php echo CFS()->get('one_stop_text');?>
                         </h3>
                         <div class="yellow-line"></div>
                     </div>
@@ -174,124 +177,67 @@
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="light-spacing text-center" id="guia">
-        <h1 class="header">Guía Experto BIF</h1>
+        <h1 class="header"><?php echo CFS()->get('experto_title');?></h1>
     </div>
     <div class="guia text-center">
-        <div class="row no-margin">
-            <div class="container spacing">
-                <div class="col-md-2 col-sm-4">
-                    <a href="#chuleton" data-toggle="modal" data-target="#chuleton">
-                        <div class="img-container">
-                            <img src="<?php echo bloginfo('template_url'); ?>/img/guia/1.png" alt="Chuletón" class="img-responsive">
-                        </div>
-                        <p class="white title">chuletón</p>
-                        <p class="white desc text-left">
-                            1. Para asar y la plancha.<br>
-                            2. Ya está marinado
-                        </p>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <a href="#diezmillo" data-toggle="modal" data-target="#diezmillo">
-                        <div class="img-container">
-                            <img src="<?php echo bloginfo('template_url'); ?>/img/guia/2.png" alt="Diezmillo" class="img-responsive">
-                        </div>
-                        <p class="white title">diezmillo</p>
-                        <p class="white desc text-left">
-                            1. Para asar y la plancha.<br>
-                            2. Jugoso y sabroso.
-                        </p>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <a href="#t-bone" data-toggle="modal" data-target="#t-bone">
-                        <div class="img-container">
-                            <img src="<?php echo bloginfo('template_url'); ?>/img/guia/3.png" alt="T-Bone" class="img-responsive">
-                        </div>
-                        <p class="white title">t-bone</p>
-                        <p class="white desc text-left">
-                            1. Para asar y la plancha.<br>
-                            2. Dos en uno NY / Filete.
-                        </p>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <a href="#top-sirloin" data-toggle="modal" data-target="#top-sirloin">
-                        <div class="img-container">
-                            <img src="<?php echo bloginfo('template_url'); ?>/img/guia/4.png" alt="Top Sirloin" class="img-responsive">
-                        </div>
-                        <p class="white title">top sirloin</p>
-                        <p class="white desc text-left">
-                            1. Para asar y cocinar.<br>
-                            2. Corte multiusos.
-                        </p>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <a href="#new-york" data-toggle="modal" data-target="#new-york">
-                        <div class="img-container">
-                            <img src="<?php echo bloginfo('template_url'); ?>/img/guia/5.png" alt="New York" class="img-responsive">
-                        </div>
-                        <p class="white title">new york</p>
-                        <p class="white desc text-left">
-                            1. Para asar.<br>
-                            - Sabroso -<br>
-                            2. Textura más firme.
-                        </p>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <a href="#rib-eye" data-toggle="modal" data-target="#rib-eye">
-                        <div class="img-container">
-                            <img src="<?php echo bloginfo('template_url'); ?>/img/guia/6.png" alt="Rib Eye" class="img-responsive">
-                        </div>
-                        <p class="white title">rib eye</p>
-                        <p class="white desc text-left">
-                            1. Para asar y la plancha.<br>
-                            2. Marmoleo blando y jugoso.
-                        </p>
-                    </a>
-                </div>
+        <div class="container spacing">
+            <?php
+            $arrayGuia = CFS()->get('guia_array');
+            $arrayEnd = end($arrayGuia);
+            $counter = 0;
+            foreach( $arrayGuia as $corte ) {
+                if($counter == 0 || $counter%6 == 0) {
+                    echo '<div class="row no-margin">';
+                }
+            ?>
+            <div class="col-md-2 col-sm-4">
+                <a href="#modal-<?php echo $counter;?>" data-toggle="modal" data-target="#modal-<?php echo $counter;?>">
+                    <div class="img-container">
+                        <img src="<?php echo $corte['principal_img'];?>" alt="Chuletón" class="img-responsive principal">
+                    </div>
+                    <p class="white title"><?php echo $corte['corte_name'];?></p>
+                    <p class="white desc text-left">
+                        <?php echo $corte['caracteristicas'];?>
+                    </p>
+                </a>
             </div>
-        </div>
-    </div>
-    <div class="modal fade infografia" id="new-york" role="dialog">
-        <div class="vertical-align">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row no-margin table-row">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <div class="col-sm-1"></div>
-                            <div class="col-sm-4">
-                                <div class="description bg-orange">
-                                    <h2 class="white">DESCRIPCIÓN</h2>
-                                </div>
-                                <p class="white">
-                                    - Magro, suave y lleno de sabor.
-                                    <br><br>
-                                    - Cocción rápida,terso con textura robusta.
-                                </p>
-                                <img class="center-block img-responsive cow" src="<?php echo bloginfo('template_url'); ?>/img/infografia/cow-ny.png" alt="Vaca">
-                            </div>
-                            <div class="col-sm-7">
-                                <h1 class="big-header white text-center">= NEW YORK =</h1>
-                                <img class="center-block img-responsive main-img" src="<?php echo bloginfo('template_url'); ?>/img/infografia/new-york.png" alt="New York">
-                                <div class="metodo bg-orange">
-                                    <h3 class="white">MÉTODO DE COCCIÓN</h3>
-                                </div>
-                                <div class="row no-margin metodos">
-                                    <div class="col-sm-6">
-                                        <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/parrilla.png" alt="Parilla">
+            <div class="modal fade infografia" id="modal-<?php echo $counter;?>" role="dialog">
+                <div class="vertical-align">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="row no-margin table-row">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-4">
+                                        <div class="description bg-orange">
+                                            <h2 class="white">DESCRIPCIÓN</h2>
+                                        </div>
                                         <p class="white">
-                                            ASADO A LA PARRILLA
+                                            <?php echo $corte['corte_desc'];?>
                                         </p>
+                                        <img class="center-block img-responsive cow" src="<?php echo $corte['corte_area_img'];?>" alt="Vaca">
                                     </div>
-                                    <div class="col-sm-6">
-                                        <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/sarten.png" alt="Sartén/Estofado">
-                                        <p class="white">
-                                            SARTÉN/ ESTOFADO
-                                        </p>
+                                    <div class="col-sm-7">
+                                        <h1 class="big-header white text-center">= <?php echo $corte['corte_name'];?> =</h1>
+                                        <img class="center-block img-responsive main-img" src="<?php echo $corte['corte_img'];?>" alt="New York">
+                                        <div class="metodo bg-orange">
+                                            <h3 class="white">MÉTODO DE COCCIÓN</h3>
+                                        </div>
+                                        <div class="row no-margin metodos">
+                                            <div class="col-sm-6">
+                                                <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/parrilla.png" alt="Parilla">
+                                                <p class="white">
+                                                    ASADO A LA PARRILLA
+                                                </p>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/sarten.png" alt="Sartén/Estofado">
+                                                <p class="white">
+                                                    SARTÉN/ ESTOFADO
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -299,230 +245,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="modal fade infografia" id="top-sirloin" role="dialog">
-        <div class="vertical-align">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row no-margin table-row">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <div class="col-sm-1"></div>
-                            <div class="col-sm-4">
-                                <div class="description bg-orange">
-                                    <h2 class="white">DESCRIPCIÓN</h2>
-                                </div>
-                                <p class="white">
-                                    Versátil, jugoso y se le conoce como top sirloin al corte redondeado que contiene la picaña.
-                                    <br><br>
-                                    No tiene hueso y tiene poca grasa.
-                                </p>
-                                <img class="center-block img-responsive cow" src="<?php echo bloginfo('template_url'); ?>/img/infografia/cow-ts.png" alt="Vaca">
-                            </div>
-                            <div class="col-sm-7">
-                                <h1 class="big-header white text-center">= TOP SIRLOIN =</h1>
-                                <img class="center-block img-responsive main-img" src="<?php echo bloginfo('template_url'); ?>/img/infografia/top-sirloin.png" alt="Top Sirloin">
-                                <div class="metodo bg-orange">
-                                    <h3 class="white">MÉTODO DE COCCIÓN</h3>
-                                </div>
-                                <div class="row no-margin metodos">
-                                    <div class="col-sm-6">
-                                        <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/parrilla.png" alt="Parilla">
-                                        <p class="white">
-                                            ASADO A LA PARRILLA
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/sarten.png" alt="Sartén/Estofado">
-                                        <p class="white">
-                                            SARTÉN/ ESTOFADO
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade infografia" id="rib-eye" role="dialog">
-        <div class="vertical-align">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row no-margin table-row">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <div class="col-sm-1"></div>
-                            <div class="col-sm-4">
-                                <div class="description bg-orange">
-                                    <h2 class="white">DESCRIPCIÓN</h2>
-                                </div>
-                                <p class="white">
-                                    Versátil, jugoso y se le conoce como top sirloin al corte redondeado que contiene la picaña.
-                                    <br><br>
-                                    No tiene hueso y tiene poca grasa.
-                                </p>
-                                <img class="center-block img-responsive cow" src="<?php echo bloginfo('template_url'); ?>/img/infografia/cow-rib.png" alt="Vaca">
-                            </div>
-                            <div class="col-sm-7">
-                                <h1 class="big-header white text-center">= RIB EYE =</h1>
-                                <img class="center-block img-responsive main-img" src="<?php echo bloginfo('template_url'); ?>/img/infografia/rib-eye.png" alt="Rib Eye">
-                                <div class="metodo bg-orange">
-                                    <h3 class="white">MÉTODO DE COCCIÓN</h3>
-                                </div>
-                                <div class="row no-margin metodos">
-                                    <div class="col-sm-6">
-                                        <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/parrilla.png" alt="Parilla">
-                                        <p class="white">
-                                            ASADO A LA PARRILLA
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/sarten.png" alt="Sartén/Estofado">
-                                        <p class="white">
-                                            SARTÉN/ ESTOFADO
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade infografia" id="t-bone" role="dialog">
-        <div class="vertical-align">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row no-margin table-row">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <div class="col-sm-1"></div>
-                            <div class="col-sm-4">
-                                <div class="description bg-orange">
-                                    <h2 class="white">DESCRIPCIÓN</h2>
-                                </div>
-                                <p class="white">
-                                    Es un corte muy popular, una de sus presentaciones es en la porción de lomo la cual le da un delicioso sabor y una excelente textura.
-                                </p>
-                                <img class="center-block img-responsive cow" src="<?php echo bloginfo('template_url'); ?>/img/infografia/cow-tbone.png" alt="Vaca">
-                            </div>
-                            <div class="col-sm-7">
-                                <h1 class="big-header white text-center">= T BONE =</h1>
-                                <img class="center-block img-responsive main-img" src="<?php echo bloginfo('template_url'); ?>/img/infografia/t-bone.png" alt="T-Bone">
-                                <div class="metodo bg-orange">
-                                    <h3 class="white">MÉTODO DE COCCIÓN</h3>
-                                </div>
-                                <div class="row no-margin metodos">
-                                    <div class="col-sm-6">
-                                        <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/parrilla.png" alt="Parilla">
-                                        <p class="white">
-                                            ASADO A LA PARRILLA
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/sarten.png" alt="Sartén/Estofado">
-                                        <p class="white">
-                                            SARTÉN/ ESTOFADO
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade infografia" id="chuleton" role="dialog">
-        <div class="vertical-align">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row no-margin table-row">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <div class="col-sm-1"></div>
-                            <div class="col-sm-4">
-                                <div class="description bg-orange">
-                                    <h2 class="white">DESCRIPCIÓN</h2>
-                                </div>
-                                <p class="white">
-                                    Este corte es conocido por ser uno de los más jugosos y rebosantes de sabor, está considerado entre los cortes más suaves que se pueden encontrar en al carne de res.
-                                </p>
-                                <img class="center-block img-responsive cow" src="<?php echo bloginfo('template_url'); ?>/img/infografia/cow-chuleton.png" alt="Vaca">
-                            </div>
-                            <div class="col-sm-7">
-                                <h1 class="big-header white text-center">= CHULETÓN =</h1>
-                                <img class="center-block img-responsive main-img" src="<?php echo bloginfo('template_url'); ?>/img/infografia/chuleton.png" alt="Chuletón">
-                                <div class="metodo bg-orange">
-                                    <h3 class="white">MÉTODO DE COCCIÓN</h3>
-                                </div>
-                                <div class="row no-margin metodos">
-                                    <div class="col-sm-6">
-                                        <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/parrilla.png" alt="Parilla">
-                                        <p class="white">
-                                            ASADO A LA PARRILLA
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/sarten.png" alt="Sartén/Estofado">
-                                        <p class="white">
-                                            SARTÉN/ ESTOFADO
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade infografia" id="diezmillo" role="dialog">
-        <div class="vertical-align">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row no-margin table-row">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <div class="col-sm-1"></div>
-                            <div class="col-sm-4">
-                                <div class="description bg-orange">
-                                    <h2 class="white">DESCRIPCIÓN</h2>
-                                </div>
-                                <p class="white">
-                                    Proviene del cuarto delantero de la res, entre el lomo y las costillas, su uso común es en asados.
-                                </p>
-                                <img class="center-block img-responsive cow" src="<?php echo bloginfo('template_url'); ?>/img/infografia/cow-diezmillo.png" alt="Vaca">
-                            </div>
-                            <div class="col-sm-7">
-                                <h1 class="big-header white text-center">= DIEZMILLO =</h1>
-                                <img class="center-block img-responsive main-img" src="<?php echo bloginfo('template_url'); ?>/img/infografia/diezmillo.png" alt="Diezmillo">
-                                <div class="metodo bg-orange">
-                                    <h3 class="white">MÉTODO DE COCCIÓN</h3>
-                                </div>
-                                <div class="row no-margin metodos">
-                                    <div class="col-sm-6">
-                                        <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/parrilla.png" alt="Parilla">
-                                        <p class="white">
-                                            ASADO A LA PARRILLA
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img src="<?php echo bloginfo('template_url'); ?>/img/infografia/sarten.png" alt="Sartén/Estofado">
-                                        <p class="white">
-                                            SARTÉN/ ESTOFADO
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+                $counter++;
+                if($counter%6 == 0 || $sponsor == $arrayEnd) {
+                    echo '</div>';
+                }
+            }
+            ?>
         </div>
     </div>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -535,7 +264,7 @@
             <div class="row">
                 <div class="col-sm-5 col-xs-4"></div>
                 <div class="col-sm-7 col-xs-8">
-                    <h1 class="header text-center">¡Aquí te lo Marinamos!</h1>
+                    <h1 class="header text-center"><?php echo CFS()->get('nosotros_title');?></h1>
                     <div class="list-item">
                         <img class="vertical-align" src="<?php echo bloginfo('template_url'); ?>/img/dividers/list-1.png" alt="1"><h3>Escoje la charola de carne que más te guste</h3>
                     </div>
@@ -559,97 +288,61 @@
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="productos spacing no-spacing-top" id="productos">
         <div class="container text-center">
-            <h1 class="header">Productos</h1>
-            <div class="row no-margin">
-                <div class="col-sm-4">
-                    <div class="img-container">
-                        <img class="img-responsive center-block" src="<?php echo bloginfo('template_url'); ?>/img/productos/barbacoa.jpg" alt="Barbacoa">
-                    </div>
-                    <div class="header-container bg-brown"><h2 class="section-header vertical-align">Barbacoa</h2></div>
-                    <p class="text">
-                        Barbacoa calientita los fines de semana <!--¡Ya lista para llevar!-->¡lista para llevar!<br>
-                        De cachete, norteña y light.
-                    </p>
+            <h1 class="header"><?php echo CFS()->get('productos_title');?></h1>
+            <?php
+            $arrayProductos = CFS()->get('productos_array');
+            $arrayEnd = end($arrayProductos);
+            $counter = 0;
+            foreach( $arrayProductos as $producto ) {
+                if($counter == 0 || $counter%3 == 0) {
+                    echo '<div class="row no-margin">';
+                }
+                switch($counter) {
+                    case 0:
+                        $color = 'bg-brown';
+                        break;
+                    case 1:
+                        $color = 'bg-orange';
+                        break;
+                    case 2:
+                        $color = 'bg-green';
+                        break;
+                    case 3:
+                        $color = 'bg-yellow';
+                        break;
+                    case 4:
+                        $color = 'bg-gold';
+                        break;
+                    case 5:
+                        $color = 'bg-purple';
+                        break;
+                    case 6:
+                        $color = 'bg-blue';
+                        break;
+                    case 7:
+                        $color = 'bg-light-green';
+                        break;
+                    case 8:
+                        $color = 'bg-dark-blue';
+                        break;
+                }
+            ?>
+            <div class="col-sm-4">
+                <div class="img-container">
+                    <img class="img-responsive center-block" src="<?php echo $producto['producto_img']; ?>" alt="Barbacoa">
                 </div>
-                <div class="col-sm-4">
-                    <div class="img-container">
-                        <img class="img-responsive center-block" src="<?php echo bloginfo('template_url'); ?>/img/productos/res.jpg" alt="Res">
-                    </div>
-                    <div class="header-container bg-orange"><h2 class="section-header vertical-align">Res</h2></div>
-                    <p class="text">
-                        <!--Diferentes cortes de carne como los Cortes Jr. que son cortes finos de lomo de res más delgados, por lo que se cocinan más rápido y son la porción exacta para tus hijos.<br>-->
-                        Milanesa, Molida, Pulpa para Taquitos, Filete, Discada, todo para tu comida del diario.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-container">
-                        <img class="img-responsive center-block" src="<?php echo bloginfo('template_url'); ?>/img/productos/cortes.jpg" alt="Cortes Especiales">
-                    </div>
-                    <div class="header-container bg-green"><h2 class="section-header vertical-align">Cortes</h2></div>
-                    <p class="text">
-                        Cortes finos, New York, Rib eye, T bone, Top Sirloin, Picaña.
-                    </p>
-                </div>
+                <div class="header-container <?php echo $color; ?>"><h2 class="section-header vertical-align"><?php echo $producto['producto_name']; ?></h2></div>
+                <p class="text">
+                    <?php echo $producto['producto_desc']; ?>
+                </p>
             </div>
-            <div class="row no-margin">
-                <div class="col-sm-4">
-                    <div class="img-container">
-                        <img class="img-responsive center-block" src="<?php echo bloginfo('template_url'); ?>/img/productos/cortes-finos.jpg" alt="Carnes Frías">
-                    </div>
-                    <div class="header-container bg-yellow"><h2 class="section-header vertical-align">Carnes Frías y Quesos</h2></div>
-                    <p class="text">
-                        <!--Gran variedad en quesos menonitas y carnes frías.-->
-                        Gran variedad de quesos menonitas y carnes frías Sabori.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-container">
-                        <img class="img-responsive center-block" src="<?php echo bloginfo('template_url'); ?>/img/productos/pollo.jpg" alt="Pollo">
-                    </div>
-                    <div class="header-container bg-gold"><h2 class="section-header vertical-align">Pollo</h2></div>
-                    <p class="text">
-                        Pechugas,  milanesa, alitas picosas, piernita enchilada y la línea light con pollo totalmente desgrasado.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-container">
-                        <img class="img-responsive center-block" src="<?php echo bloginfo('template_url'); ?>/img/productos/cerdo.jpg" alt="Cerdo">
-                    </div>
-                    <div class="header-container bg-purple"><h2 class="section-header vertical-align">Cerdo</h2></div>
-                    <p class="text">
-                        Chuleta ahumada, pierna, lomo.
-                    </p>
-                </div>
-            </div>
-            <div class="row no-margin">
-                <div class="col-sm-4">
-                    <div class="img-container">
-                        <img class="img-responsive center-block" src="<?php echo bloginfo('template_url'); ?>/img/productos/pescado.jpg" alt="Pescado">
-                    </div>
-                    <div class="header-container bg-blue"><h2 class="section-header vertical-align">Pescado</h2></div>
-                    <p class="text">
-                        Filete tilapia, medallones de atún.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-container">
-                        <img class="img-responsive center-block" src="<?php echo bloginfo('template_url'); ?>/img/productos/productos-reg.jpg" alt="Productos Regionales">
-                    </div>
-                    <div class="header-container bg-light-green"><h2 class="section-header vertical-align">Productos Regionales</h2></div>
-                    <p class="text">
-                        Nueces finas, tortillas de harina, carne seca Y dulces regionales.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-container">
-                        <img class="img-responsive center-block" src="<?php echo bloginfo('template_url'); ?>/img/productos/cocina-facil.jpg" alt="Cocina Fácil">
-                    </div>
-                    <div class="header-container bg-dark-blue"><h2 class="section-header vertical-align">Cocina Fácil</h2></div>
-                    <p class="text">
-                        Hamburguesas, Brochetas, Pizza, Lasaña y Espagueti.
-                    </p>
-                </div>
-            </div>
+            <?php
+                $counter++;
+                if($counter%3 == 0 || $sponsor == $arrayEnd) {
+                    echo '</div>';
+                }
+            }
+            ?>
         </div>
     </div>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -657,10 +350,8 @@
     <!--/* BARBACOA */-->
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div class="banner-divider barbacoa">
-        <div class="container vertical-align">
-            <img class="img-responsive center-block" src="<?php echo bloginfo('template_url'); ?>/img/dividers/barbacoa-caption.png" alt="La Mejor Barbacoa">
-        </div>
+    <div class="promotional-banner">
+        <img src="<?php echo CFS()->get('banner');?>" alt="La Mejor Barbacoa">
     </div>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -671,7 +362,7 @@
         <div class="parallax-container">
             <div class="parallax"><img src="<?php echo bloginfo('template_url'); ?>/img/servicio/bg.jpg" alt=""></div>
             <div class="container text-center">
-                <h1 class="white vertical-align section-header">Servicio &nbsp;a &nbsp;Clientes</h1>
+                <h1 class="white vertical-align section-header"><?php echo CFS()->get('servicio_title');?></h1>
             </div>
         </div>
     </div>
@@ -681,7 +372,7 @@
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="ubicaciones container light-spacing" id="ubicaciones">
-        <h1 class="header text-center">Ubica tu tienda BIF más cercana</h1>
+        <h1 class="header text-center"><?php echo CFS()->get('ubicacion_title');?></h1>
     </div>
     <div class="googleMap" id="googleMap" position="chihuahua"></div>
     <div class="light-spacing container text-center ubicaciones">
@@ -808,23 +499,23 @@
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="contacto light-spacing" id="contacto">
         <div class="container text-center">
-            <h1 class="header">Contáctanos</h1>
+            <h1 class="header"><?php echo CFS()->get('contactanos_title');?></h1>
             <div class="col-sm-6 border-right">
                 <img src="<?php echo bloginfo('template_url'); ?>/img/icons/phone.png" alt="Teléfono">
                 <p class="text">
-                    Para atención especial a nuestros clientes
+                    <?php echo CFS()->get('telefono_desc');?>
                 </p>
                 <p class="orange">
-                    01 800 627.7634
+                    <?php echo CFS()->get('telefono_num');?>
                 </p>
             </div>
             <div class="col-sm-6">
                 <img src="<?php echo bloginfo('template_url'); ?>/img/icons/mail.png" alt="Correo Electrónico">
                 <p class="text">
-                    O bien por correo electrónico
+                    <?php echo CFS()->get('correo_desc');?>
                 </p>
                 <p class="orange">
-                    experto@bif.com.mx
+                    <?php echo CFS()->get('correo_mail');?>
                 </p>
             </div>
         </div>
