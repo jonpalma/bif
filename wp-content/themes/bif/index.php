@@ -43,7 +43,7 @@
             <img class="right hidden-xs" src="<?php echo bloginfo('template_url'); ?>/img/nosotros/right-meat.png">
         </div>
     </div>
-    <div class="modal fade" id="video-modal" role="dialog">
+    <div class="modal fade" id="video-modal" role="dialog" tabindex="-1">
         <div class="vertical-align">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -201,7 +201,7 @@
                     </p>
                 </a>
             </div>
-            <div class="modal fade infografia" id="modal-<?php echo $counter;?>" role="dialog">
+            <div class="modal fade infografia" id="modal-<?php echo $counter;?>" role="dialog" tabindex="-1">
                 <div class="vertical-align">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -247,7 +247,7 @@
             </div>
             <?php
                 $counter++;
-                if($counter%6 == 0 || $sponsor == $arrayEnd) {
+                if($counter%6 == 0 || $corte == $arrayEnd) {
                     echo '</div>';
                 }
             }
@@ -338,7 +338,7 @@
             </div>
             <?php
                 $counter++;
-                if($counter%3 == 0 || $sponsor == $arrayEnd) {
+                if($counter%3 == 0 || $producto == $arrayEnd) {
                     echo '</div>';
                 }
             }
